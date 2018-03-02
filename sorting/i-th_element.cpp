@@ -4,9 +4,13 @@
 
 using namespace std;
 
+//can find median or other order statistic
+
 //input: n distinct numbers and int i, 0 <= i < n
 //output: i-th order statistic, element that is larger
-//than i - 1 other elements 
+//than i - 1 other elements
+
+//runs for O(n) in average
 
 int randPartition(vector <int> & a, int p, int r) {
     int k = rand() % (r - p) + p;
